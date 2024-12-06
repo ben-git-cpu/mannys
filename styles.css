@@ -1,0 +1,125 @@
+/* Basic reset for page */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --background-color: #2c2528;
+    --text-color: #fcf1b5;
+}
+
+/* Body and overall layout */
+body {
+    line-height: 1.5;
+    font-family: Arial, sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: flex-start;
+    text-align: center;
+    max-width: 100%;
+    padding: 20px;
+}
+
+
+
+/* Header styling */
+header {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    font-size: 36px;
+    color: #fcf1b5;
+}
+
+/* Logo container */
+.logo-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.logo-container img {
+    max-width: 80%;  /* Limit the size of the logo */
+    height: auto;
+    display: block;
+    margin: 0 auto;
+   /* border-radius: 50%; /* Optional for circular logos */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3); /* Soft, blurred shadow effect around the image */
+}
+
+/* Centering the Facebook logo */
+.facebook-link-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;  /* Adjust space above */
+}
+
+.facebook-logo {
+    max-width: 200px;  /* Adjust the max size */
+    height: auto;
+}
+
+/* Add space below navigation */
+nav {
+    margin-top: 30px; /* Adds space between the Facebook image and the navigation links */
+}
+
+/* Navigation styling */
+nav {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;  /* Center nav items horizontally */
+    gap: 20px;
+}
+
+nav ul li {
+    margin: 0;
+}
+
+/* mobile-friendly */
+@media (max-width: 600px) {
+    nav ul {
+        flex-direction: row;
+        gap: 10px;
+    }
+    .logo-container img {
+        max-width: 100%; /* Utilize full width for smaller devices */
+    }
+}
+
+/* Styling for sections */
+section {
+    border: 2px solid var(--text-color); /* Border color */
+    padding: 20px;                      /* Space inside */
+    margin: 20px 0;                     /* Space between sections */
+    border-radius: 10px;                /* Rounded corners */
+    background-color: #3a3336;          /* Box background */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4); /* Optional box shadow */
+}
+
+section h2 {
+    color: var(--text-color);           /* Heading color */
+}
+
+hr {
+    border: 0;
+    height: 2px;
+    background-color: #fcf1b5; /* Example separator color */
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
